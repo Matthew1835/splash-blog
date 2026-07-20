@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About · Splash</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header id="site-nav" class="site-nav"></header>
+
+    <main class="container" style="padding-top: 40px; padding-bottom: 60px;">
+        <h1 style="font-family: var(--font-display); font-size: 26px; margin-bottom: 14px;">About Splash</h1>
+        <p style="color:var(--text-muted); line-height:1.7;">Splash is a small blog built as part of The Odin Project's Node.js curriculum — an Express and Prisma API behind a plain HTML, CSS, and JavaScript front end.</p>
+    </main>
+
+    <footer class="site-footer">Splash · The Odin Project Blog API</footer>
+
+    <script type="module">
+        import { renderNav } from "./js/nav.js";
+        renderNav("about");
+    </script>
+</body>
+</html>
