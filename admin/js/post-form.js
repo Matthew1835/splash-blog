@@ -75,7 +75,7 @@ form.addEventListener("submit", async (e) => {
             showMessage("Saved", false);
         } else {
             const created = await createPost(data);
-            window.location.href = `post-form.html?id=${created.id}`;
+            window.location.href = `index.html`;
         }
     } catch (err) {
         showMessage(err.message);

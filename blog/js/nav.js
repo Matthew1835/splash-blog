@@ -7,7 +7,6 @@ export function renderNav (activePage) {
     const user = getUser();
     const links = [
         { href: "index.html", label: "Home", key: "home" },
-        { href: "archive.html", label: "Archive", key: "archive" },
         { href: "about.html", label: "About", key: "about" },
     ];
 
