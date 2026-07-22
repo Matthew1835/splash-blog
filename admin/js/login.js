@@ -1,4 +1,4 @@
-import { login } from "./auth.js";
+import { login } from "./api.js";
 import { setSession } from "./auth.js";
 
 const form = document.getElementById("login-form");

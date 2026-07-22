@@ -130,7 +130,7 @@ function renderComments(comments) {
                     <div class="comment-avatar">${c.user.username[0].toUpperCase()}</div>
                     <div class="comment-body">
                         <div class="comment-meta">
-                            <span class="username">${escapeHtml(c.username)}</span>
+                            <span class="username">${escapeHtml(c.user.username)}</span>
                             <span class="date">· ${formatDate(c.createdAt)}</span>
                         </div>
                         <div class="comment-text">${escapeHtml(c.content)}</div>

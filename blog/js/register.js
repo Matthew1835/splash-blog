@@ -14,7 +14,7 @@ form.addEventListener("submit", async (e) => {
     const username = document.getElementById("username").value.trim();
     const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value;
-    const submitBtn = form.querySelector('button[type="submit]');
+    const submitBtn = form.querySelector('button[type="submit"]');
     submitBtn.disabled = true;
 
     try {

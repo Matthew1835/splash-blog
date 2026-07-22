@@ -6,7 +6,7 @@ const userSelect = { select: { id: true, username: true } };
 const getCommentsForPost = async (req, res) => {
     const postId = Number(req.params.postId);
 
-    const comments = await prisma.comments.findMany({
+    const comments = await prisma.comment.findMany({
         where: { postId },
         orderBy: { createdAt: "asc" },
         include: { user: userSelect },
@@ -22,10 +22,10 @@ const createComment = async (req, res) => {
 
     if (!content) return res.status(400).json({ error: "Content is required" });
 
-    const post = await prisma.post.findUnique({ where: { postId } });
+    const post = await prisma.post.findUnique({ where: { id: postId } });
     if (!post) return res.status(404).json({ error: "Post not found" });
 
-    const comment = await prisma.post.create({
+    const comment = await prisma.comment.create({
         data: { content, postId, userId: req.user.id },
         include: { user: userSelect },
     });

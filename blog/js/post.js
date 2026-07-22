@@ -13,7 +13,7 @@ const imageEl = document.getElementById("post-image");
 const bodyEl = document.getElementById("post-body");
 const commentsListEl = document.getElementById("comments-list");
 const commentsHeadingEl = document.getElementById("comments-heading");
-const commentAreaEl = document.getElementById("comment-area");
+const commentAreaEl = document.getElementById("comments-area");
 
 const PLACEHOLDER_IMAGE = "https://placehold.co/1200x675/ddb892/7f5539?text=Splash";
 
@@ -62,7 +62,7 @@ function renderComments(comments) {
                 return `
                     <div class="comment" data-id="${c.id}">
                         <div class="comment-avatar">${c.user.username[0].toUpperCase()}</div>
-                        <div class="comment-body>
+                        <div class="comment-body">
                             <div class="comment-meta">
                                 <span class="username">${escapeHtml(c.user.username)}</span>
                                 <span class="date">· ${formatDate(c.createdAt)}</span>
@@ -72,7 +72,7 @@ function renderComments(comments) {
                                 canModerate 
                                 ? `<div class="comment-actions"><button data-action="delete">Delete</button></div>` 
                                 : ""
-                            };
+                            }
                         </div>
                     </div>
                 `;
@@ -82,7 +82,7 @@ function renderComments(comments) {
     commentsListEl.querySelectorAll(`[data-action="delete"]`).forEach(btn => {
         btn.addEventListener("click", async (e) => {
             if (!confirm("Delete this comment?")) return;
-            const id = e.target.closet(".comment").dataset.id;
+            const id = e.target.closest(".comment").dataset.id;
             try {
                 await deleteComment(id);
                 loadComments();

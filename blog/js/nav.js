@@ -13,7 +13,7 @@ export function renderNav (activePage) {
 
     mount.innerHTML = `
         <a href="index.html" class="nav-log">Splash</a>
-        <div class="nav-links>
+        <div class="nav-links">
             ${links.map(l => {
                 return `<a href="${l.href}" class="${l.key === activePage ? "active" : ""}">${l.label}</a>`
             }).join("")}
@@ -21,8 +21,8 @@ export function renderNav (activePage) {
         <div class="nav-auth">
             ${
                 user
-                    ? `<span class="username>${user.username}</span><button class="btn btn-outline" id="logout-btn" style="padding: 6px 14px;">Log out</button>`
-                    : `<a href="login.html" class="btn btn-outline" style="padding: 6px 14px;>Sign in</a>`
+                    ? `<span class="username">${user.username}</span><button class="btn btn-outline" id="logout-btn" style="padding: 6px 14px;">Log out</button>`
+                    : `<a href="login.html" class="btn btn-outline" style="padding: 6px 14px;">Sign in</a>`
             }
         </div>
     `;
