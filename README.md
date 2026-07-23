@@ -4,8 +4,11 @@ A full-stack blog built for [The Odin Project](https://www.theodinproject.com/)'
 
 ![Project Screenshot](./screenshots/preview.png)
 
-<!-- [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://threadvault-inventory.onrender.com) -->
+[![Live Blog](https://img.shields.io/badge/Live-Demo-green)](https://splash-blog.netlify.app)
+[![Admin Dashboard](https://img.shields.io/badge/Admin-Dashboard-red)](https://splash-admin.netlify.app)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-blue)](https://github.com/Matthew1835/splash-blog)
+
+> The API is hosted on Render's free tier, which sleeps after 15 minutes of inactivity — the first request after a while may take 30-60 seconds to respond while it wakes back up.
 
 ---
 
@@ -132,25 +135,17 @@ Update `api/.env` so `CLIENT_URL` and `ADMIN_URL` match whatever ports you actua
 
 ## Screenshots
 
-| Login | Register |
-|-------|----------|
-| ![Login](./screenshots/login.png) | ![Register](./screenshots/register.png) |
+| Login | Register | Home |
+|-------|----------|------|
+| ![Login](./screenshots/login.png) | ![Register](./screenshots/register.png) | ![Home](./screenshots/home.png) |
 
-| Home | About |
-|------|-------|
-| ![Home](./screenshots/home.png) | ![About](./screenshots/about.png) |
+| About | Post Detail | Admin Login  |
+|-------|-------------|--------------|
+| ![About](./screenshots/about.png) | ![Post Detail](./screenshots/post-detail.png) | ![Admin Login](./screenshots/login-admin.png) |
 
-| Post Detail | Admin Login  |
-|-------------|--------------|
-| ![Post Detail](./screenshots/post-detail.png) | ![Admin Login](./screenshots/login-admin.png) |
-
-| Admin Dashboard | Post Form |
-|-----------------|-----------|
-| ![Dashboard](./screenshots/dashboard.png) | ![Post form](./screenshots/post-form.png) |
-
-| Mobile |
-|--------|
-| ![Mobile](./screenshots/mobile.png) |
+| Admin Dashboard | Post Form | Mobile |
+|-----------------|-----------|--------|
+| ![Dashboard](./screenshots/dashboard.png) | ![Post form](./screenshots/post-form.png) | ![Mobile](./screenshots/mobile.png) |
 
 ---
 
